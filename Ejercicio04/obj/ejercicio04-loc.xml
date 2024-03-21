@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<Locations >
+  <Project>
+    <vfs_file>C:\WORKSPACES\STR\Ejercicio04\ejercicio04.gpr</vfs_file>
+    <file_marker column=" 32" line=" 26" >
+      <vfs_project>C:\WORKSPACES\STR\Ejercicio04\ejercicio04.gpr</vfs_project>
+      <vfs_file>C:\WORKSPACES\STR\Ejercicio04\src\main.adb</vfs_file>
+    </file_marker>
+    <file_marker current="true" column=" 41" line=" 33" >
+      <vfs_project>C:\WORKSPACES\STR\Ejercicio04\ejercicio04.gpr</vfs_project>
+      <vfs_file>C:\WORKSPACES\STR\Ejercicio04\src\cola.adb</vfs_file>
+    </file_marker>
+  </Project>
+</Locations>
