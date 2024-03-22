@@ -1,7 +1,3 @@
-
-
-
-
 package body simulador is
 
    function calc_ST1 (ST2 : Float) return Float is

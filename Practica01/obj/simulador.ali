@@ -1,0 +1,65 @@
+V "GNAT Lib v2021"
+A -gnatA
+A -mtune=generic
+A -march=x86-64
+P ZX
+
+RN
+RV NO_FLOATING_POINT
+RV NO_IMPLEMENTATION_PRAGMAS
+
+U simulador%b		simulador.adb		05aae582 NE OO PK IL
+
+U simulador%s		simulador.ads		e9980c4f EE NE OO PK
+
+D simulador.ads		20240322000118 e9980c4f simulador%s
+D simulador.adb		20240322000038 ec32e9cd simulador%b
+D system.ads		20210520051136 2ffa5114 system%s
+G a e
+G c Z s b [calc_st1 simulador 12 13 none]
+G c Z s b [calc_st2 simulador 13 13 none]
+G c Z s b [calc_tt simulador 15 13 none]
+G c Z s b [calc_sd1 simulador 16 13 none]
+G c Z s b [calc_sc1 simulador 18 13 none]
+G c Z s b [calc_sc2 simulador 19 13 none]
+X 1 simulador.ads
+1K9*Simulador 21l5 21e14 2|1b14 47l5 47t14
+5f4*b{float} 2|13r23 35r17
+6f4*Leq{float} 2|13r25 35r19
+7f4*H{float} 2|13r52 35r31
+8f4*c{float} 2|13r33 13r63 35r46
+9f4*Cp{float} 2|13r41 13r71 35r52
+10f4*p{float} 2|13r44 13r74 35r55
+12V13*calc_ST1{float} 12>23 2|3b13 8l8 8t16
+12f23 ST2{float} 2|3b23 6r14
+13V13*calc_ST2{float} 13>23 13>28 13>33 13>38 13>43 2|10b13 15l8 15t16
+13f23 SR1{float} 2|10b23 13r29
+13f28 ST4{float} 2|10b28 13r58
+13f33 ST1{float} 2|10b33 13r15
+13f38 SC1{float} 2|10b38 13r37 13r67
+13f43 Tt{float} 2|10b43 13r55
+15V13*calc_Tt{float} 15>22 15>27 2|17b13 22l8 22t15
+15f22 ST1{float} 2|17b22 20r14
+15f27 ST2{float} 2|17b27 20r20
+16V13*calc_SD1{float} 16>23 16>28 16>33 2|24b13 29l8 29t16
+16f23 SC2{float} 2|24b23 27r53 27r69
+16f28 ST2{float} 2|24b28 27r32 27r65
+16f33 ST3{float} 2|24b33 27r43
+18V13*calc_SC1{float} 18>23 18>28 18>32 18>37 18>42 2|32b13 38l8 38t16
+18f23 SR1{float} 2|32b22 35r23
+18f28 Tt{float} 2|32b27 35r34
+18f32 ST4{float} 2|32b31 35r39
+18f37 ST2{float} 2|32b36 35r58
+18f42 ST1{float} 2|32b41 35r64
+19V13*calc_SC2{float} 19>23 19>28 19>33 2|40b13 45l8 45t16
+19f23 SD1{float} 2|40b22 43r16
+19f28 ST2{float} 2|40b27 43r42 43r71
+19f33 ST3{float} 2|40b32 43r55
+X 2 simulador.adb
+4f7 ST1{float} 6m7 7r14
+11f7 calc{float} 13m7 14r14
+18f7 Tt{float} 20m7 21r14
+25f7 SD1{float} 27m7 28r14
+33f7 SC1{float} 35m7 36r14
+41f7 SC2{float} 43m7 44r14
+

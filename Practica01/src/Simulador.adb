@@ -1,43 +1,47 @@
-with Ada.Text_IO; use Ada.Text_IO;
+package body simulador is
 
-package body Sesion01 is
+   function calc_ST1 (ST2 : Float) return Float is
+      ST1 : Float;
+   begin
+      ST1 := ST2 - 10.0;
+      return ST1;
+   end calc_ST1;
 
-   -- Archivo: Simulador.adb
--- Cuerpo de la implementación del paquete Simulador
+   function calc_ST2 (SR1, ST4, ST1, SC1, Tt:Float) return Float is
+      calc : Float;
+   begin
+      calc := ST1 + ((b*Leq*SR1*C)/(SC1*Cp*p)) - ((H*(Tt-ST4)*C)/(SC1*Cp*p));
+      return calc;
+   end calc_ST2;
 
-    procedure Leer_Datos(Datos : in out Sensor_Data) is
-        -- Implementación de la función para leer datos del archivo input.txt
-    begin
-        -- Código para leer datos del archivo input.txt y asignarlos a Datos
-    end Leer_Datos;
+   function calc_Tt (ST1, ST2 : Float) return Float is
+      Tt : Float;
+   begin
+      Tt := (ST1 + ST2) / 2.0;
+      return Tt;
+   end calc_Tt;
 
-    procedure Simular_Planta(Datos : in Sensor_Data;
-                              Estado_Planta : in out Plant_State;
-                              Iteracion : Integer) is
-        -- Implementación de la función para simular la planta y calcular las señales de control
-    begin
-        -- Código para simular la planta y calcular las señales de control
-    end Simular_Planta;
+   function calc_SD1 (SC2, ST2, ST3 : Float) return Float is
+      SD1 : Float;
+   begin
+      SD1 := 24.0*(0.135+0.003*ST2-0.0203*ST3-0.001*SC2+0.00004*ST2*SC2);
+      return SD1;
+   end calc_SD1;
 
-    procedure Ejecutar_Metodos_Seguridad_Y_Almacenamiento(Estado_Planta : in Plant_State;
-                                                           Iteracion : Integer) is
-        -- Implementación de la función para ejecutar métodos de seguridad y almacenamiento de datos
-    begin
-        -- Código para ejecutar métodos de seguridad y almacenamiento de datos
-    end Ejecutar_Metodos_Seguridad_Y_Almacenamiento;
+   -- Ejercicio 2
+   function calc_SC1(SR1, Tt, ST4, ST2, ST1:Float) return Float is
+      SC1: Float;
+   begin
+      SC1 := (((b*Leq*SR1) - (H*(Tt - ST4)))*c) / (Cp*p*(ST2 - ST1));
+      return SC1;
 
-    procedure Mostrar_Pantalla(Estado_Planta : in Plant_State;
-                               Iteracion : Integer) is
-        -- Implementación del procedimiento para visualización por pantalla
-    begin
-        -- Código para mostrar los datos por pantalla
-    end Mostrar_Pantalla;
+   end calc_SC1;
 
-    procedure Escribir_Archivo(Estado_Planta : in Plant_State;
-                               Iteracion : Integer) is
-        -- Implementación del procedimiento para escribir datos en archivo data.txt
-    begin
-        -- Código para escribir datos en el archivo data.txt
-    end Escribir_Archivo;
+   function calc_SC2(SD1, ST2, ST3:Float) return Float is
+      SC2: Float;
+   begin
+      SC2 := ((SD1/24.0) - 0.135 - 0.003*ST2 + 0.0203*ST3) / (0.00004*ST2 - 0.001);
+      return SC2;
+   end calc_SC2;
 
-end Sesion01;
+end simulador;

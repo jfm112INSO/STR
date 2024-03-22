@@ -1,37 +1,21 @@
-package Sesion01 is
+package Simulador is
 
-    type Sensor_Data is record
-        SR1 : Float; -- Sensor de radiación
-        ST4 : Float; -- Temperatura ambiente
-        ST3 : Float; -- Temperatura del agua de mar
-    end record;
+   --Constantes
 
-    type Plant_State is record
-        ST1 : Float; -- Temperatura de entrada al campo
-        ST2 : Float; -- Temperatura de salida del campo
-        SC1 : Float; -- Caudal de entrada al campo
-        SC2 : Float; -- Caudal de entrada al módulo
-        SD1 : Float; -- Nivel de producción de destilado
-    end record;
+   b: constant float := 0.15;
+   Leq: constant float := 15.0;
+   H: constant float := 4.0;
+   c: constant float := 9.0*2.0*6.0*10000.0;
+   Cp: constant float := 4190.0;
+   p: constant float := 975.0;
 
-    -- Función para leer datos del archivo input.txt
-    procedure Leer_Datos(Datos : in out Sensor_Data);
+   function calc_ST1 (ST2:Float) return Float;
+   function calc_ST2 (SR1, ST4, ST1, SC1, Tt:Float) return Float;
 
-    -- Función para simular la planta y calcular las señales de control
-    procedure Simular_Planta(Datos : in Sensor_Data;
-                              Estado_Planta : in out Plant_State;
-                              Iteracion : Integer);
+   function calc_Tt (ST1, ST2:Float) return Float;
+   function calc_SD1 (SC2, ST2, ST3:Float) return Float;
 
-    -- Función para ejecutar métodos de seguridad y almacenamiento de datos
-    procedure Ejecutar_Metodos_Seguridad_Y_Almacenamiento(Estado_Planta : in Plant_State;
-                                                           Iteracion : Integer);
+   function calc_SC1 (SR1, Tt, ST4, ST2, ST1:Float) return Float;
+   function calc_SC2 (SD1, ST2, ST3:Float) return Float;
 
-    -- Procedimiento para visualización por pantalla
-    procedure Mostrar_Pantalla(Estado_Planta : in Plant_State;
-                               Iteracion : Integer);
-
-    -- Procedimiento para escribir datos en archivo data.txt
-    procedure Escribir_Archivo(Estado_Planta : in Plant_State;
-                               Iteracion : Integer);
-
-end Sesion01;
+end Simulador;

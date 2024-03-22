@@ -1,0 +1,12 @@
+Cuidado ST2 tiene una temperatura de:  1.02128E+02ºC
+Cuidado ST2 tiene una temperatura de:  1.10087E+02ºC
+Cuidado ST2 tiene una temperatura de:  1.15106E+02ºC
+Cuidado ST2 tiene una temperatura de:  1.16599E+02ºC
+Cuidado ST2 tiene una temperatura de:  1.16810E+02ºC
+Cuidado ST2 tiene una temperatura de:  1.18579E+02ºC
+Cuidado ST2 tiene una temperatura de:  1.21016E+02ºC
+Cuidado ST2 tiene una temperatura de:  1.22092E+02ºC
+Cuidado ST2 tiene una temperatura de:  1.24303E+02ºC
+Cuidado ST2 tiene una temperatura de:  1.23164E+02ºC
+Cuidado ST2 tiene una temperatura de:  1.24088E+02ºC
+Cuidado ST2 tiene una temperatura de:  1.20982E+02ºC
