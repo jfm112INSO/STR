@@ -7,6 +7,7 @@ procedure Main is
 
    -- Vectores de los valores de los sensores
    ST3, ST4, SC1, SC2, SR1, SD1, Tt : Vector(1..15);
+   -- ST1 y ST2 deben aportar un valor inicial [0]
    ST1, ST2                         : Vector(0..15);
 
    -- Valor óptimo ST2 (Primer proceso de control)
@@ -30,28 +31,24 @@ procedure Main is
 
 begin
 
-   -- Valores fijos
-   SC1 := (others => 15.0);
-   SC2 := (others => 450.0);
-
    -- Valores iniciales
    ST1(0) := 50.0;
    ST2(0) := 60.0;
 
-   -- Crear data.txt (salida Ejercicio 1)
-   Create(data, Out_File, "data.txt");
-   -- Crear data2.txt (salida Ejercicio 2)
-   Create(data2, Out_File, "data2.txt");
-   -- Crear alarm_log.txt (alarmas Ejercicio 1)
-   Create(alarm, Out_File, "alarm_log.txt");
-   -- Crear alarm_log2.txt (alarmas Ejercicio 2)
-   Create(alarm2, Out_File, "alarm_log2.txt");
-   -- Abrir input.txt (entrada)
-   Open(input, In_File, "input.txt");
-
    -- Ejercicio 1
    Put_Line("Ejercicio 1:");
    Put_Line("");
+
+   -- Valores fijos
+   SC1 := (others => 15.0);
+   SC2 := (others => 450.0);
+
+   -- Abrir input.txt (entrada)
+   Open(input, In_File, "input.txt");
+   -- Crear data.txt (salida Ejercicio 1)
+   Create(data, Out_File, "data.txt");
+   -- Crear alarm_log.txt (alarmas Ejercicio 1)
+   Create(alarm, Out_File, "alarm_log.txt");
 
    -- Escribir cabecera de los datos en archivo data.txt (salida)
    Put_Line(data,
@@ -123,17 +120,26 @@ begin
 
    end loop;
 
-   -- Cerrar input.txt para volver a cargarlo
+   -- Cerrar archivos de texto utilizados
    Close(input);
-   -- Abrir input.txt (entrada)
-   Open(input, In_File, "input.txt");
+   Close(data);
+   Close(alarm);
+
+
 
    -- Ejercicio 2
    Put_Line("");
    Put_Line("Ejercicio 2:");
    Put_Line("");
 
-   -- Escribir cabecera de los datos en archivo data.txt (salida)
+   -- Abrir input.txt (entrada)
+   Open(input, In_File, "input.txt");
+   -- Crear data2.txt (salida Ejercicio 2)
+   Create(data2, Out_File, "data2.txt");
+   -- Crear alarm_log2.txt (alarmas Ejercicio 2)
+   Create(alarm2, Out_File, "alarm_log2.txt");
+
+   -- Escribir cabecera de los datos en archivo data2.txt (salida)
    Put_Line(data2,
             " k" & ASCII.HT &
             " ST1(k)" & ASCII.HT & ASCII.HT &
@@ -219,9 +225,7 @@ begin
 
    -- Cerrar archivos de texto utilizados
    Close(input);
-   Close(data);
    Close(data2);
-   Close(alarm);
    Close(alarm2);
 
 end Main;
