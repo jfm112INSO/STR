@@ -1,7 +1,7 @@
 with Ada.Text_IO; use Ada.Text_IO;
 with cola; use cola;
 
-procedure Main is
+procedure main4_1 is
    -- Variables auxiliares
    Dato: Elemento;
 begin
@@ -25,4 +25,4 @@ begin
       exit when Quitar(Dato) = 0; -- Salir si la cola está vacía
       Put(Integer'Image(Dato));
    end loop;
-end Main;
+end main4_1;

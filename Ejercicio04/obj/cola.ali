@@ -15,8 +15,8 @@ U cola%b		cola.adb		2913aa1c NE OO PK IL
 
 U cola%s		cola.ads		0e6e41a7 EE NE OO PK IL
 
-D cola.ads		20240321211150 0e6e41a7 cola%s
-D cola.adb		20240321211636 277debbb cola%b
+D cola.ads		20240323155740 0e6e41a7 cola%s
+D cola.adb		20240323155740 277debbb cola%b
 D system.ads		20210520051136 2ffa5114 system%s
 G a e
 G c Z s b [vacia cola 5 13 none]

@@ -4,7 +4,7 @@ procedure main1_1 is
 
 subtype tipoA is Integer range -120 .. 120;
 subtype tipoB is Integer range 0 .. 50;
-subtype tipoC is mod 255;
+subtype tipoC is Integer range 0 .. 255;
 
    A: tipoA;
    B: tipoB;
@@ -13,9 +13,7 @@ subtype tipoC is mod 255;
    sol2: Integer;
    sol3: Integer;
 
-
 begin
-
   A := 8;
   B := 16;
   C := 32;
@@ -27,8 +25,4 @@ begin
    Put_Line("A + B =" & Integer'Image(sol1));
    Put_Line("A + C =" & Integer'Image(sol2));
    Put_Line("B + C =" & Integer'Image(sol3));
-
-
-
-
 end main1_1;

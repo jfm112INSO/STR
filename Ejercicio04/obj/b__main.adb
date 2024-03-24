@@ -247,10 +247,10 @@ package body ada_main is
    end;
 
 --  BEGIN Object file/option list
-   --   C:\WORKSPACES\STR\Ejercicio04\obj\cola.o
-   --   C:\WORKSPACES\STR\Ejercicio04\obj\main.o
-   --   -LC:\WORKSPACES\STR\Ejercicio04\obj\
-   --   -LC:\WORKSPACES\STR\Ejercicio04\obj\
+   --   C:\Users\Pablo\Desktop\STR\Ejercicio04\obj\cola.o
+   --   C:\Users\Pablo\Desktop\STR\Ejercicio04\obj\main.o
+   --   -LC:\Users\Pablo\Desktop\STR\Ejercicio04\obj\
+   --   -LC:\Users\Pablo\Desktop\STR\Ejercicio04\obj\
    --   -LC:/gnat/2021/lib/gcc/x86_64-w64-mingw32/10.3.1/adalib/
    --   -static
    --   -lgnat

@@ -14,7 +14,7 @@ procedure main1_6 is
  
    type Datos_Personales is record
       Nombre : String(1..4);
-      Apellidos : String(1..18);
+      Apellidos : String(1..11);
       date: Fecha;
    end record;
 
@@ -23,12 +23,12 @@ procedure main1_6 is
 
 begin
    -- Inicialización de los campos del registro
-P1 := (Nombre => "Pepe", Apellidos => "Palotes Picapiedra", date => (Dia => 1, Mes => 1, Ano => 2001));
+P1 := (Nombre => "Pepe", Apellidos => "Lopez Lopez", date => (Dia => 1, Mes => 1, Ano => 2001));
 
 
    -- Acceso a los campos del registro
    Put_Line("Nombre: " & P1.Nombre);
    Put_Line("Edad: " & P1.Apellidos);
-  Put_Line("Fecha de nacimiento: " & Integer'Image(P1.Date.Dia) & "/" & Integer'Image(P1.Date.Mes) & "/" & Integer'Image(P1.Date.Ano));
+   Put_Line("Fecha de nacimiento: " & Integer'Image(P1.Date.Dia) & "/" & Integer'Image(P1.Date.Mes) & "/" & Integer'Image(P1.Date.Ano));
 
 end main1_6;

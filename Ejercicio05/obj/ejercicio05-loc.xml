@@ -1,7 +1,6 @@
 <?xml version="1.0"?>
 <Locations >
-  <Project>
-    <vfs_file>C:\Users\Pablo\Desktop\STR\Ejercicio05\ejercicio05.gpr</vfs_file>
+  <Project >
     <file_marker column=" 1" line=" 1" >
       <vfs_project />
       <vfs_file>C:\Users\Pablo\Desktop\STR\Ejercicio02\ejercicio02.gpr</vfs_file>
@@ -59,6 +58,22 @@
       <vfs_file>C:\Users\Pablo\Desktop\STR\Ejercicio05\src\numeros_complejos.ads</vfs_file>
     </file_marker>
     <file_marker column=" 1" line=" 1" >
+      <vfs_project>C:\Users\Pablo\Desktop\STR\Ejercicio05\ejercicio05.gpr</vfs_project>
+      <vfs_file>C:\Users\Pablo\Desktop\STR\Ejercicio05\src\numeros_complejos.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 1" >
+      <vfs_project>C:\Users\Pablo\Desktop\STR\Ejercicio05\ejercicio05.gpr</vfs_project>
+      <vfs_file>C:\Users\Pablo\Desktop\STR\Ejercicio05\src\numeros_complejos.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 1" >
+      <vfs_project>C:\Users\Pablo\Desktop\STR\Ejercicio05\ejercicio05.gpr</vfs_project>
+      <vfs_file>C:\Users\Pablo\Desktop\STR\Ejercicio05\src\main5_1.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 1" >
+      <vfs_project>C:\Users\Pablo\Desktop\STR\Ejercicio05\ejercicio05.gpr</vfs_project>
+      <vfs_file>C:\Users\Pablo\Desktop\STR\Ejercicio05\src\numeros_complejos.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 33" >
       <vfs_project>C:\Users\Pablo\Desktop\STR\Ejercicio05\ejercicio05.gpr</vfs_project>
       <vfs_file>C:\Users\Pablo\Desktop\STR\Ejercicio05\src\numeros_complejos.adb</vfs_file>
     </file_marker>

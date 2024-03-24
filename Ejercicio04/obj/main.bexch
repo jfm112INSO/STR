@@ -1,18 +1,18 @@
 [GENERATED OBJECT FILE]
 b__main.o
 [PROJECT FILES]
-C:\WORKSPACES\STR\Ejercicio04\ejercicio04.gpr
-20240321200040 e2a96c2d6a056beb7038fb0fbe75fc59
+C:\Users\Pablo\Desktop\STR\Ejercicio04\ejercicio04.gpr
+20240323155740 4a641dcace3e16fb292f4c101bc9dbe1
 [BOUND OBJECT FILES]
-C:\WORKSPACES\STR\Ejercicio04\obj\cola.o
-C:\WORKSPACES\STR\Ejercicio04\obj\main.o
+C:\Users\Pablo\Desktop\STR\Ejercicio04\obj\cola.o
+C:\Users\Pablo\Desktop\STR\Ejercicio04\obj\main.o
 [GENERATED SOURCE FILES]
 b__main.ads
 b__main.adb
 b__main.ali
 [RESULTING OPTIONS]
--LC:\WORKSPACES\STR\Ejercicio04\obj\
--LC:\WORKSPACES\STR\Ejercicio04\obj\
+-LC:\Users\Pablo\Desktop\STR\Ejercicio04\obj\
+-LC:\Users\Pablo\Desktop\STR\Ejercicio04\obj\
 -LC:/gnat/2021/lib/gcc/x86_64-w64-mingw32/10.3.1/adalib/
 -static
 -static-libgcc
