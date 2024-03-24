@@ -15,15 +15,14 @@ RV NO_IMPLEMENTATION_ATTRIBUTES
 RV NO_IMPLEMENTATION_PRAGMAS
 RV NO_OBSOLESCENT_FEATURES
 
-U main%b		main.adb		fb7a710c NE OO SU
+U main%b		main.adb		1cafeef4 NE OO SU
 W ada%s			ada.ads			ada.ali
 W ada.float_text_io%s	a-flteio.ads		a-flteio.ali
 W ada.integer_text_io%s	a-inteio.ads		a-inteio.ali
-W ada.io_exceptions%s	a-ioexce.ads		a-ioexce.ali
 Z ada.strings.text_buffers%s  a-sttebu.adb	a-sttebu.ali
 W ada.text_io%s		a-textio.adb		a-textio.ali
 W simulador%s		simulador.adb		simulador.ali
-Z system.concat_3%s	s-conca3.adb		s-conca3.ali
+Z system.concat_6%s	s-conca6.adb		s-conca6.ali
 Z system.img_flt%s	s-imgflt.ads		s-imgflt.ali
 Z system.img_int%s	s-imgint.ads		s-imgint.ali
 
@@ -43,10 +42,10 @@ D a-tiinio.ads		20210520051130 390edddb ada.text_io.integer_io%s
 D a-unccon.ads		20210520051130 0e9b276f ada.unchecked_conversion%s
 D interfac.ads		20210520051132 edec285f interfaces%s
 D i-cstrea.ads		20210520051132 e53d8b8e interfaces.c_streams%s
-D main.adb		20240322013108 4f77794e main%b
-D simulador.ads		20240322000118 e9980c4f simulador%s
+D main.adb		20240324014412 adc34341 main%b
+D simulador.ads		20240323185324 0859b6dc simulador%s
 D system.ads		20210520051136 2ffa5114 system%s
-D s-conca3.ads		20210520051132 0b705ca5 system.concat_3%s
+D s-conca6.ads		20210520051132 d2c72db2 system.concat_6%s
 D s-crtl.ads		20210520051132 0ebbdb71 system.crtl%s
 D s-exctab.ads		20210520051132 54135002 system.exception_table%s
 D s-ficobl.ads		20210520051132 078245e4 system.file_control_block%s
@@ -70,59 +69,79 @@ D s-unstyp.ads		20210520051134 2b077493 system.unsigned_types%s
 D s-wchcon.ads		20210520051136 1b7d22d2 system.wch_con%s
 D unchconv.ads		20210520051136 ca2f9e18 unchecked_conversion%s
 G a e
-G c Z b b [main standard 7 11 none]
-G r c none [main standard 7 11 none] [calc_tt simulador 15 13 none]
-G r c none [main standard 7 11 none] [calc_st2 simulador 13 13 none]
-G r c none [main standard 7 11 none] [calc_st1 simulador 12 13 none]
-G r c none [main standard 7 11 none] [calc_sd1 simulador 16 13 none]
+G c Z b b [main standard 6 11 none]
+G r c none [main standard 6 11 none] [calc_tt simulador 15 13 none]
+G r c none [main standard 6 11 none] [calc_st2 simulador 16 13 none]
+G r c none [main standard 6 11 none] [calc_st1 simulador 17 13 none]
+G r c none [main standard 6 11 none] [calc_sd1 simulador 18 13 none]
+G r c none [main standard 6 11 none] [calc_sc1 simulador 21 13 none]
+G r c none [main standard 6 11 none] [calc_sc2 simulador 22 13 none]
 X 1 ada.ads
-16K9*Ada 20e8 17|1r6 1r31 2r6 2r31 3r6 3r31 4r6
+16K9*Ada 20e8 17|1r6 1r31 2r6 2r31 3r6 3r31
 X 3 a-flteio.ads
 20K13*Float_Text_IO[12|46] 17|3w10 3r35
 X 4 a-inteio.ads
 18K13*Integer_Text_IO[13|46] 17|2w10 2r35
-X 5 a-ioexce.ads
-18K13*IO_Exceptions 30e22 17|4w10
 X 11 a-textio.ads
 58K13*Text_IO 725e16 17|1w10 1r35
-65P9*File_Type 17|14r13 15r13 16r12
-67n23*In_File{67E9} 17|36r16
-67n32*Out_File{67E9} 17|37r19 38r18
-97U14*Create 17|37s4 38s4
-112U14*Open 17|36s4
-127U14*Close 17|88s4 89s4 90s4
-262U14*New_Line 17|47s4
-496U14*Put_Line 17|40s4 49s4 72s10 76s7
-506U14*Put_Line 17|46s4 68s7
+65P9*File_Type 17|18r12 20r11 22r12 24r12 26r13
+67n23*In_File{67E9} 17|50r16 129r16
+67n32*Out_File{67E9} 17|42r17 44r18 46r18 48r19
+97U14*Create 17|42s4 44s4 46s4 48s4
+112U14*Open 17|50s4 129s4
+127U14*Close 17|127s4 221s4 222s4 223s4 224s4 225s4
+496U14*Put_Line 17|57s4 96s10 102s7 137s4 190s10 196s7
+506U14*Put_Line 17|53s4 54s4 69s4 98s10 114s7 132s4 133s4 134s4 149s4 192s10
+. 208s7
 X 12 a-tiflio.ads
-52U14*Get 17|57s7[3|20] 58s7[3|20] 59s7[3|20]
+52U14*Get 17|83s7[3|20] 84s7[3|20] 85s7[3|20] 163s7[3|20] 164s7[3|20] 165s7[3|20]
 X 13 a-tiinio.ads
-51U14*Get 17|56s7[4|18]
+51U14*Get 17|82s7[4|18] 162s7[4|18]
 X 17 main.adb
-7U11*Main 7b11 92l5 92t9
-11i4 i{integer} 54r10 57r22 58r22 59r22 62r10 62r28 62r38 63r11 63r30 63r38
-. 63r46 63r63 64r11 64r30 65r11 65r38 65r48 68r20 70r15 72r72 76r56 76r80
-. 76r104 77r44 78r44 78r68 85m7 85r12
-12i4 k{integer} 56m18 76r32
-14p4 input{11|65P9} 36m9 36r9 56r11 57r11 58r11 59r11 88m10 88r10
-15p4 output{11|65P9} 37m11 37r11 40r13 49r13 76r16 89m10 89r10
-16p4 alarm{11|65P9} 38m11 38r11 72r19 90m10 90r10
-20f4 ST2_Opt{float}
-21f4 SD1_Opt{float}
-24A9 Vec(float)<integer> 25r29 26r29
-25a4 ST3{24A9} 59m18 59r18 65r44 76r100
-25a9 ST4{24A9} 58m18 58r18 63r34 77r40
-25a14 SR1{24A9} 57m18 57r18 63r26 78r40
-25a19 SD1{24A9} 65m7 78r64
-25a24 Tt{24A9} 62m7 63r60
-26a4 ST1{24A9} 33m4 62r24 63r42 64m7 76r52
-26a9 ST2{24A9} 34m4 62r34 63m7 64r26 65r34 68r16 70r11 72r68 76r76
-26a14 SC1{24A9} 30m4 63r52 77r64
-26a19 SC2{24A9} 31m4 65r26 77r88
+6U11*Main 6b11 227l5 227t9
+9a4 ST3{18|4A9} 85m18 85r18 91r44 106r16 117r16 165m18 165r18 170r45 173r44
+. 200r16 211r16
+9a9 ST4{18|4A9} 84m18 84r18 89r34 107r16 118r16 164m18 164r18 169r41 171r34
+. 201r16 212r16
+9a14 SC1{18|4A9} 34m4 89r52 108r16 119r16 169m7 171r52 176r10 177m10 178r13
+. 179m10 202r16 213r16
+9a19 SC2{18|4A9} 35m4 91r26 109r16 120r16 170m7 173r26 181r10 182m10 183r13
+. 184m10 203r16 214r16
+9a24 SR1{18|4A9} 83m18 83r18 89r26 110r16 121r16 163m18 163r18 169r26 171r26
+. 204r16 215r16
+9a29 SD1{18|4A9} 91m7 111r16 122r16 173m7 205r16 216r16
+9a34 Tt{18|4A9} 88m7 89r60 168m7 169r34 171r60
+10a4 ST1{18|4A9} 38m4 88r24 89r42 90m7 104r16 115r16 168r24 169r58 171r42
+. 172m7 198r16 209r16
+10a9 ST2{18|4A9} 39m4 88r34 89m7 90r26 91r34 94r11 96r101 98r94 105r16 116r16
+. 168r34 170r35 171m7 172r26 173r34 188r11 190r102 192r94 199r16 210r16
+13f4 ST2_Opt{float} 169r49
+15f4 SD1_Opt{float} 170r26
+18p4 input{11|65P9} 50m9 50r9 82r11 83r11 84r11 85r11 127m10 127r10 129m9
+. 129r9 162r11 163r11 164r11 165r11 221m10 221r10
+20p4 data{11|65P9} 42m11 42r11 57r13 102r16 222m10 222r10
+22p4 data2{11|65P9} 44m11 44r11 137r13 196r16 223m10 223r10
+24p4 alarm{11|65P9} 46m11 46r11 96r19 224m10 224r10
+26p4 alarm2{11|65P9} 48m11 48r11 190r19 225m10 225r10
+29i4 k{integer} 82m18 83r22 84r22 85r22 88r10 88r28 88r38 89r11 89r30 89r38
+. 89r46 89r56 89r63 90r11 90r30 91r11 91r30 91r38 91r48 94r15 96r34 96r105
+. 98r27 98r98 103r16 104r20 105r20 106r20 107r20 108r20 109r20 110r20 111r20
+. 114r16 115r20 116r20 117r20 118r20 119r20 120r20 121r20 122r20 162m18 163r22
+. 164r22 165r22 168r10 168r28 168r38 169r11 169r30 169r37 169r45 169r62 170r11
+. 170r39 170r49 171r11 171r30 171r38 171r46 171r56 171r63 172r11 172r30 173r11
+. 173r30 173r38 173r48 176r14 177r14 178r17 179r14 181r14 182r14 183r17 184r14
+. 188r15 190r35 190r106 192r27 192r98 197r16 198r20 199r20 200r20 201r20
+. 202r20 203r20 204r20 205r20 208r16 209r20 210r20 211r20 212r20 213r20 214r20
+. 215r20 216r20
+80i8 i{integer}
+160i8 i{integer}
 X 18 simulador.ads
-1K9*Simulador 17|5w6 5r32 18|21e14
-12V13*calc_ST1{float} 17|64s17
-13V13*calc_ST2{float} 17|63s17
-15V13*calc_Tt{float} 17|62s16
-16V13*calc_SD1{float} 17|65s17
+1K9*Simulador 17|4w6 4r31 18|24e14
+4A9*Vector(float)<integer> 17|9r39 10r39
+15V13*calc_Tt{float} 17|88s16 168s16
+16V13*calc_ST2{float} 17|89s17 171s17
+17V13*calc_ST1{float} 17|90s17 172s17
+18V13*calc_SD1{float} 17|91s17 173s17
+21V13*calc_SC1{float} 17|169s17
+22V13*calc_SC2{float} 17|170s17
 
